@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <form id="calculator">
+            <div class="form-group">
+                <label for="firstNumber">First Number:</label>
+                <input id="firstNumber" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+                <label for="secondNumber">Second Number:</label>
+                <input id="secondNumber" class="form-control" type="text">
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="operator" value="add" checked>
+                    +
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="operator" value="subtract">
+                    -
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="operator" value="multiply">
+                    *
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="operator" value="divide">
+                    /
+                </label>
+            </div>
+            <button type="submit" class="button">=</button>
+        </form>
+        <div id="output">
+
+        </div>
+    </div>
+</body>
+
+</html>
