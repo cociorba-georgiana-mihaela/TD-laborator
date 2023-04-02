@@ -13,13 +13,13 @@ function getFibonacci(n) {
         if (n >= 1 && n <= 10) {
             if (n === 1) {
                 return [0, 1];
-            } else
+            } else {
 
                 for (var i = 2; i < n; i++) {
                     fib[i] = fib[i - 2] + fib[i - 1];
                 }
-            console.log(fib);
-
+                console.log(fib);
+            }
         } else {
             console.log("not allowed");
         }
@@ -27,7 +27,7 @@ function getFibonacci(n) {
         console.log("not allowed");
     }
 }
-
+console.log(getFibonacci(2));
 console.log(getFibonacci(5));
 
 
